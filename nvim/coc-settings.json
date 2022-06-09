@@ -1,0 +1,51 @@
+{
+//  "suggest.completionItemKindLabels": {
+//                    "keyword": "\uf1de",
+//                    "variable": "\ue79b",
+//                    "value": "\uf89f",
+//                    "operator": "\u03a8",
+//                    "constructor": "\uf0ad",
+//                    "function": "\u0192",
+//                    "reference": "\ufa46",
+//                   "constant": "\uf8fe",
+//                   "method": "\uf09a",
+//                   "struct": "\ufb44",
+//                    "class": "\uf0e8",
+//                    "interface": "\uf417",
+//                    "text": "\ue612",
+//                    "enum": "\uf435",
+//                    "enumMember": "\uf02b",
+//                    "module": "\uf40d",
+//                    "color": "\ue22b",
+//                    "property": "\ue624",
+//                    "field": "\uf9be"
+//  }
+  "suggest.completionItemKindLabels": {
+     "text":   "",
+    "method": "",
+    "function":"",
+    "constructor":"",
+    "field":"",
+    "variable":"",
+    "class":"",
+    "interface": "ﰮ",
+    "module":"",
+    "property":"",
+    "unit":"",
+    "value":"",
+    "enum":"",
+    "keyword":"",
+    "snippet":"﬌",
+    "color":"",
+    "file":"",
+    "reference":"",
+    "folder":"",
+    "enumMember":"",
+    "constant":"",
+    "struct":"",
+    "event":"",
+    "operator":"ﬦ",
+    "typeParameter":""
+  }
+
+}
