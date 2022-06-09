@@ -1,5 +1,5 @@
-
-![Neovim screenshot](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim.png)
+![Neovim with nerd tree](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim.png)
+![Neovim with hover doc](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim-hoverdoc.png)
 
 ## Config files
 Warning: Don't blindly use my settings unless you know what that entails.
