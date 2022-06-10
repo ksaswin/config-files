@@ -16,4 +16,5 @@ Warning: Don't blindly use my settings unless you know what that entails.
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
 - [preservim/nerdtree](https://github.com/preservim/nerdtree) - A file system explorer.
 - [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) - Completion plugin.
+- [vim-commentary](https://github.com/tpope/vim-commentary) - For single line and multi-line commenting.
 

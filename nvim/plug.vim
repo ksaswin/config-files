@@ -9,6 +9,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'cohama/lexima.vim'
 
 if has("nvim")
+  Plug 'https://github.com/tpope/vim-commentary'
   Plug 'preservim/nerdtree'
   Plug 'neovim/nvim-lspconfig'
   Plug 'glepnir/lspsaga.nvim'
