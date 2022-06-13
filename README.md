@@ -18,3 +18,27 @@ Warning: Don't blindly use my settings unless you know what that entails.
 - [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) - Completion plugin.
 - [vim-commentary](https://github.com/tpope/vim-commentary) - For single line and multi-line commenting.
 
+### Plugin keybinds
+- neoclide/coc.nvim:
+  - <Tab> Choose the first suggestion.
+- nvim-lspconfig
+  - 'gd' Jumps to the definition of symbol under the cursor.
+- lspsaga.nvim
+  - <C-j> Lspsaga diagnostic_jump_next
+  - 'K' Lspsaga hover_doc
+  - <C-k> Lspsaga signature_help
+  - 'gh' Lspsaga lsp_finder
+  - 'gp' Lspsaga preview_definition
+  - 'gr' Lspsaga rename
+- preservim/nerdtree
+  - <C-f> NerdTree focus
+  - <C-n> NerdTree
+  - <C-t> NerdTree toggle
+- telescope.nvim
+  - ':f' find_files
+  - ';r' live_grep
+  - '\\' buffers
+  - ';;' help_tags
+- vim-commentary
+  - 'gcc' to comment the current line.
+  - 'gc' to comment multiple lines.
