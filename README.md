@@ -20,25 +20,25 @@ Warning: Don't blindly use my settings unless you know what that entails.
 
 ### Plugin keybinds
 - neoclide/coc.nvim:
-  - <Tab> Choose the first suggestion.
+  - `<Tab>` Choose the first suggestion.
 - nvim-lspconfig
-  - 'gd' Jumps to the definition of symbol under the cursor.
+  - `gd` Jumps to the definition of symbol under the cursor.
 - lspsaga.nvim
-  - <C-j> Lspsaga diagnostic_jump_next
-  - 'K' Lspsaga hover_doc
-  - <C-k> Lspsaga signature_help
-  - 'gh' Lspsaga lsp_finder
-  - 'gp' Lspsaga preview_definition
-  - 'gr' Lspsaga rename
+  - `<C-j>` Lspsaga diagnostic_jump_next
+  - `K` Lspsaga hover_doc
+  - `<C-k>` Lspsaga signature_help
+  - `gh` Lspsaga lsp_finder
+  - `gp` Lspsaga preview_definition
+  - `gr` Lspsaga rename
 - preservim/nerdtree
-  - <C-f> NerdTree focus
-  - <C-n> NerdTree
-  - <C-t> NerdTree toggle
+  - `<C-f>` NerdTree focus
+  - `<C-n>` NerdTree
+  - `<C-t>` NerdTree toggle
 - telescope.nvim
-  - ':f' find_files
-  - ';r' live_grep
-  - '\\' buffers
-  - ';;' help_tags
+  - `:f` find_files
+  - `;r` live_grep
+  - `\\` buffers
+  - `;;` help_tags
 - vim-commentary
-  - 'gcc' to comment the current line.
-  - 'gc' to comment multiple lines.
+  - `gcc` to comment the current line.
+  - `gc` to comment multiple lines.
