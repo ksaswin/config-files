@@ -24,6 +24,7 @@ if has("nvim")
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'nvim-lualine/lualine.nvim'
   Plug 'lewis6991/gitsigns.nvim'
+  Plug 'leafOfTree/vim-matchtag'
   Plug 'ryanoasis/vim-devicons'
 endif
 
