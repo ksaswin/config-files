@@ -65,7 +65,7 @@ I have set it up to be `C-Space`
 
 - ##### Sessions
   - `Prefix s`: Choose from a list of sessions
-  - 'Prefix $': Rename session
+  - `Prefix $`: Rename session
   - `Prefix d`: Detach from a session
 
 - ##### Windows
