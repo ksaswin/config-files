@@ -9,6 +9,7 @@ The config files are stored in `~/.config/nvim/`
 - #### Pane split
   - `C-w v`: Vertical split
   - `C-w s`: Horizontal split
+  - `C-w q`: Kill the pane
   - `C-w h(j, k, l)`: Move between the split panes
   - `Space`: Cycle through all the panes
 
