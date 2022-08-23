@@ -10,6 +10,7 @@ The config files are stored in `~/.config/nvim/`
   - `C-w v`: Vertical split
   - `C-w s`: Horizontal split
   - `C-w h(j, k, l)`: Move between the split panes
+  - `Space`: Cycle through all the panes
 
 - #### Cursor movement
   - `0`: Move to start of line
@@ -39,6 +40,12 @@ The config files are stored in `~/.config/nvim/`
   - `C-r`: Redo
   - `>>`: Add indent
   - `<<`: Remove indent
+
+- #### Buffers
+  - `:badd <filename>`: Add a new buffer
+  - `:bn`: Move to the next buffer
+  - `:bp`: Move to previous buffer
+  - `:bdelete`: Delete the current buffer
 
 - #### Extras
   - `~`: Swap the case of a letter
