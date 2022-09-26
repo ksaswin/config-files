@@ -1,5 +1,4 @@
 ![Neovim with nerd tree](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim.png)
-![Neovim with hover doc](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim-hoverdoc.png)
 
 ## Config files
 
@@ -15,7 +14,7 @@ Warning: Don't blindly use my settings unless you know what that entails.
 
 - #### [NvChad](https://github.com/NvChad/NvChad)
 
-  The custom plugins used along with the NvChad setup can be found here: [NvChad custom](https://github.com/ksaswin/config-files/tree/nvchad/nvim/custom)
+  The custom plugins used along with the NvChad setup can be found here: [NvChad custom](https://github.com/ksaswin/config-files/tree/master/nvim/custom)
 
 - #### NeoVim keybindings
 
