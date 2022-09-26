@@ -1,4 +1,4 @@
-![Neovim with nerd tree](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim.png)
+![Neovim with nerd tree](https://raw.githubusercontent.com/ksaswin/config-files/master/nvim/screenshot/Neovim-NvChad.png)
 
 ## Config files
 
