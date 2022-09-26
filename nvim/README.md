@@ -50,6 +50,9 @@ The config files are stored in `~/.config/nvim/`
 
 - #### Extras
   - `~`: Swap the case of a letter
+  - `VISUAL-MODE U`: Toggle to uppercase
+  - `VISUAL-MODE u`: Toggle to lowercase
+  - `C-a`: Increment digit
   - `.`: Redo the previous command
   - `t<char>`: Cursor to the nearest specified character
   - `r<char>`: Replace the specified character
@@ -59,28 +62,45 @@ The config files are stored in `~/.config/nvim/`
   - `:set signcolumn=no`: Remove the git diff sign column
 
 ### Plugin keybindings
+- `<leader>` here is the `<SPACE>` key.
+- #### Switch between windows
+  - `<C-h>`: Window left
+  - `<C-l>`: Window right
+  - `<C-j>`: Window down
+  - `<C-k>`: Window up
 
-- neoclide/coc.nvim:
-  - `<Tab>` Choose the first suggestion.
-- nvim-lspconfig
-  - `gd` Jumps to the definition of symbol under the cursor.
-- lspsaga.nvim
-  - `<C-j>` Lspsaga diagnostic_jump_next
-  - `K` Lspsaga hover_doc
-  - `<C-k>` Lspsaga signature_help
-  - `gh` Lspsaga lsp_finder
-  - `gp` Lspsaga preview_definition
-  - `gr` Lspsaga rename
-- preservim/nerdtree
-  - `<C-f>` NerdTree focus
-  - `<C-n>` NerdTree
-  - `<C-t>` NerdTree toggle
-- telescope.nvim
-  - `:f` find_files
-  - `;r` live_grep
-  - `\\` buffers
-  - `;;` help_tags
-- vim-commentary
-  - `gcc` to comment the current line.
-  - `gc` to comment multiple lines.
+- #### Update NvChad
+  - `<leader>uu`: Update NvChad
+
+- #### Buffers
+  - `<TAB>`: Next buffer
+  - `<S-TAB>`: Previous buffer
+  - `<leader>x`: Close buffer
+
+- #### Commenting
+  - `<leader>/`: Toggle comment
+
+- #### LSP
+  - `gd`: Lsp definition
+  - `K`: Lsp hover
+  - `<leaser>ls`: Lsp signature help
+  - `[d`: Goto previous
+  - `d]`: Goto next
+  - `<leader>fm`: Lsp formatting
+  - `<leader>wl`: List workspace folders
+
+- #### NVIM Tree
+  - `<C-n>`: Nvim tree toggle
+  - `<leader>e`: Nvim tree focus
+
+- #### Telescope
+  -  `<leader>ff`: Find files
+  -  `<leader>fa`: Find all
+  -  `<leader>tk`: Show keys
+  -  `<leader>cm`: Git commits
+  -  `<leader>gt`: Git status
+  -  `<leader>th`: Nvchad themes
+
+- #### Blank line
+  -  `<leader>cc`: Jump to current context
 
