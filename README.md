@@ -7,10 +7,9 @@ Warning: Don't blindly use my settings unless you know what that entails.
 
 ### Contents
 
-- nvim (Neovim) config
-  - Plugin manager used: [vim-plug](https://github.com/junegunn/vim-plug)
-- iterm config
-- tmux config
+- [nvim (Neovim) config](https://github.com/ksaswin/config-files#neovim-config)
+- [iterm config](https://github.com/ksaswin/config-files#iterm-config)
+- [tmux config](https://github.com/ksaswin/config-files#tmux-config)
 
 ### NeoVim config
 
