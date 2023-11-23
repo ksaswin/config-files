@@ -2,7 +2,7 @@
 
 ### Setup file path
 
-The config files are stored in `~/.config/nvim/`
+The config files are to be stored in `~/.config/nvim/lua/custom`
 
 ### Basic keybindings
 
@@ -69,9 +69,6 @@ The config files are stored in `~/.config/nvim/`
   - `<C-j>`: Window down
   - `<C-k>`: Window up
 
-- #### Update NvChad
-  - `<leader>uu`: Update NvChad
-
 - #### Buffers
   - `<TAB>`: Next buffer
   - `<S-TAB>`: Previous buffer
@@ -83,7 +80,7 @@ The config files are stored in `~/.config/nvim/`
 - #### LSP
   - `gd`: Lsp definition
   - `K`: Lsp hover
-  - `<leaser>ls`: Lsp signature help
+  - `<leaser>lf`: Lsp signature help
   - `[d`: Goto previous
   - `d]`: Goto next
   - `<leader>fm`: Lsp formatting
@@ -96,7 +93,6 @@ The config files are stored in `~/.config/nvim/`
 - #### Telescope
   -  `<leader>ff`: Find files
   -  `<leader>fa`: Find all
-  -  `<leader>tk`: Show keys
   -  `<leader>cm`: Git commits
   -  `<leader>gt`: Git status
   -  `<leader>th`: Nvchad themes
