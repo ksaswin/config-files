@@ -1,5 +1,9 @@
 ## My NVIM setup
 
+### FYI
+
+Git repository with the best collection of [Awesome Neovim plugins](https://github.com/rockerBOO/awesome-neovim)
+
 ### Setup file path
 
 The config files are to be stored in `~/.config/nvim/lua/custom`
