@@ -125,7 +125,10 @@ local plugins = {
       "mfussenegger/nvim-dap",
       -- nvim-treesitter/nvim-treesitter used to find variable definitions
       "nvim-treesitter/nvim-treesitter",
-    }
+    },
+    config = function()
+      require("nvim-dap-virtual-text").setup()
+    end
   },
 
   -- mfussenegger/nvim-dap apater for vscode-js-debug
