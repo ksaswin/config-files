@@ -71,7 +71,8 @@ for _, language in ipairs( languages ) do
       },
       trace = true, -- include debugger info
       internalConsoleOptions = "neverOpen",
-    }
+    },
+
   }
 end
 

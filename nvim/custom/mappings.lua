@@ -49,14 +49,18 @@ M.dap = {
   n = {
     -- To be used with mfussenegger/nvim-dap
     ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>", "Toggle breakpoint" },
-    ["<leader>dc"] = { "<cmd> DapContinue <CR>", "Debugger continue" },
+    ["<leader>dc"] = { "<cmd> DapContinue <CR>", "Debugger Continue" },
+    ["<leader>di"] = { "<cmd> DapStepInto <CR>", "Debugger Step-Into" },
+    ["<leader>do"] = { "<cmd> DapStepOver <CR>", "Debugger Step-Over" },
+    ["<leader>dO"] = { "<cmd> DapStepOut <CR>", "Debugger Step-Out" },
+    ["<leader>dT"] = { "<cmd> DapTerminate <CR>", "Debugger Stop/Terminate" },
 
     -- VS Code Debug actions (Reference: https://code.visualstudio.com/docs/editor/debugging#_debug-actions)
-    ["F5"] = { "<cmd> DapContinue <CR>", "Debugger Continue" },
-    ["F10"] = { "<cmd> DapStepOver <CR>", "Debugger Step-Over" },
-    ["F11"] = { "<cmd> DapStepInto <CR>", "Debugger Step-Into" },
-    ["S-F11"] = { "<cmd> DapStepOut <CR>", "Debugger Step-Out" },
-    ["S-F5"] = { "<cmd> DapTerminate <CR>", "Debugger Stop/Terminate" },
+    -- ["F10"] = { "<cmd> DapStepOver <CR>", "Debugger Step-Over" },
+    -- ["S-F11"] = { "<cmd> DapStepOut <CR>", "Debugger Step-Out" },
+    -- ["S-F5"] = { "<cmd> DapTerminate <CR>", "Debugger Stop/Terminate" },
+    -- ["F5"] = { "<cmd> DapContinue <CR>", "Debugger Continue" },
+    -- ["F11"] = { "<cmd> DapStepInto <CR>", "Debugger Step-Into" },
   }
 }
 --
