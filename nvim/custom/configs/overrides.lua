@@ -6,9 +6,18 @@ M.treesitter = {
     "lua",
     "html",
     "css",
-    "scss",
+    "javascript",
     "typescript",
-    "vue"
+    "tsx",
+    "c",
+    "markdown",
+    "markdown_inline",
+  },
+  indent = {
+    enable = true,
+    -- disable = {
+    --   "python"
+    -- },
   },
 }
 
@@ -22,8 +31,12 @@ M.mason = {
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
-    "vue-language-server",
-    "vetur-vls"
+    "deno",
+    "prettier",
+
+    -- c/cpp stuff
+    "clangd",
+    "clang-format",
   },
 }
 
