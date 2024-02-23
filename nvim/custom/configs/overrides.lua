@@ -30,13 +30,32 @@ M.mason = {
     -- web dev stuff
     "css-lsp",
     "html-lsp",
-    "typescript-language-server",
     "deno",
+    "typescript-language-server",
     "prettier",
+    "vetur-vls",
+    "vue-language-server",
 
     -- c/cpp stuff
-    "clangd",
-    "clang-format",
+    -- "clangd",
+    -- "clang-format",
+
+    -- go stuff
+    "gopls",
+
+    -- python stuff
+    "pyright",
+    "pylint",
+
+    -- github stuff
+    "marksman",
+    "markdownlint",
+    "gitlint",
+    "actionlint",
+
+    -- docker stuff
+    "yaml-language-server",
+    "dockerfile-language-server"
   },
 }
 
