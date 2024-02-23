@@ -47,7 +47,8 @@ M.mason = {
 
     -- python stuff
     "pyright",
-    "pylint",
+    "mypy",
+    "ruff",
 
     -- github stuff
     "marksman",
