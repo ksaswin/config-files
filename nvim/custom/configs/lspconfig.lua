@@ -17,6 +17,7 @@ end
 -- 
 -- lspconfig.pyright.setup { blabla}
 
+-- Golang LSP setup
 lspconfig.gopls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
@@ -34,8 +35,56 @@ lspconfig.gopls.setup {
   },
 }
 
+-- Python LSP setup
 lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
   filetypes = { "python" }
 }
+
+-- Markdown LSP setup
+lspconfig.marksman.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "markdown", "markdown.mdx" },
+}
+
+-- Vue LSP Setup
+lspconfig.volar.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  cmd = { "vue-language-server" },
+  filetypes = { "vue" },
+  settings = {
+    vetur = {
+      completion = {
+        autoImport = true,
+        useScaffoldSnippets = true
+      },
+
+      validation = {
+        template = true,
+        script = true,
+        style = true,
+        templateProps = true,
+        interpolation = true
+      }
+    }
+  }
+}
+
+-- Lua LSP Setup
+lspconfig.lua.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "lua" },
+  cmd = { "lua-language-server" }
+}
+
+-- Dockerfile LSP Setup
+-- lspconfig.docker.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   filetypes = { "dockerfile" },
+--   cmd = { "docker-langserver" }
+-- }
