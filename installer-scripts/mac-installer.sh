@@ -72,7 +72,7 @@ install $BREW "--cask postman" "Postman"
 #  /_________________________________________________________________________/
 
 # Azure-CLI
-install $BREW "azure-cli" "Azure-CLI"
+install $BREW "azure-cli" "Azure-CLI" true
 
 # Btop (Resource monitoring TUI)
 install $BREW "btop" "Btop"
