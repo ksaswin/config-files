@@ -6,6 +6,18 @@
 #### Mac
 
 - Homebrew
+- Casks
+  - DuckDuckGo
+  - Figma
+  - Firefox
+  - Google Chrome
+  - iTerm2
+  - Microsoft Azure-Storage Explorer
+  - Microsoft Remote Desktop
+  - Numi
+  - Obsidian
+  - PgAdmin4
+  - Postman
 
 #### Linux
 
