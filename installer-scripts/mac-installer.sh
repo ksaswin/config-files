@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 source ./helpers.sh
-source ./logs.sh
+# source ./logs.sh
 
 
 # Saving HOME path, since wildcard characters (~) does not resolve in conditions
@@ -10,7 +10,7 @@ HOME=$(echo $HOME)
 # Check if Homebrew has already been installed
 # Install if we don't have it
 if test ! $(which brew); then
-  log "Installing Homebrew..."
+  notify_installation "Installing Homebrew..."
   /usr/bin/env bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
@@ -94,7 +94,7 @@ install $BREW "neovim" "Neovim"
 # Node Version Manager (nvm)
 install $BREW "nvm" "Node Version Manager (nvm)"
 create_dir "$HOME/.nvm"
-echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
+# echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> ~/.zshrc  # FIXME: Uncomment when ready
 
 # Pipenv
 install $BREW "pipenv" "Pipenv" true
@@ -131,10 +131,5 @@ create_dir "$HOME/.config"
 
 # NvChad
 create_dir "$HOME/.config/nvim"
-notify_installation "NvChad"
-git clone https://github.com/NvChad/starter ~/.config/nvim
+# clone_repo_to_dir "NvChad" "https://github.com/NvChad/starter" "$HOME/.config/nvim" # FIXME: Uncomment when ready
 
-
-# TODO:
-# - OhMyZsh Installation
-# - Installation for some form of Docker daemon
