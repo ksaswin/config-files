@@ -5,46 +5,44 @@
 
 #### Mac
 
-- Homebrew
-- Casks
-  - DuckDuckGo
-  - Figma
-  - Firefox
-  - Google Chrome
-  - iTerm2
-  - Microsoft Azure-Storage Explorer
-  - Microsoft Remote Desktop
-  - Numi
-  - Obsidian
-  - PgAdmin4
-  - Postman
-- CLIs & TUIs
-  - Azure-CLI
-  - Btop
-  - Fuzzy Finder
-  - Git
-  - Go Lang
-  - Json Query Tool (jq)
-  - Json Query Tool (TUI) -> jqp
-  - K9S
-  - Kubelogin
-  - Kustomize
-  - lolcat (colorize stdout with random gradients)
-  - Neovim
-  - Node Version Manager (nvm)
-  - Pipenv
-  - Postgresql
-  - ripgrep
-  - TLDR
-  - TMUX
-  - trash (safer-replacement for rm)
-  - Tree-sitter
-  - Hashicorp Vault CLI
-- Other
-  - NvChad
-  - OhMyZsh
+| Package                          | App Type        | Optional | Description                           |
+|----------------------------------|-----------------|----------|---------------------------------------|
+| Homebrew                         | Package manager |          | Package manager for MacOs             |
+| DuckDuckGo                       | Cask (GUI)      |          |                                       |
+| Figma                            | Cask (GUI)      | Yes      |                                       |
+| Google Chrome                    | Cask (GUI)      |          |                                       |
+| iTerm2                           | Cask (GUI)      |          |                                       |
+| Microsoft Azure-Storage Explorer | Cask (GUI)      | Yes      |                                       |
+| Microsoft Remote Desktop         | Cask (GUI)      | Yes      |                                       |
+| Numi                             | Cask (GUI)      | Yes      | Calculator App                        |
+| Obsidian                         | Cask (GUI)      |          | Note-taking App                       |
+| PgAdmin4                         | Cask (GUI)      | Yes      |                                       |
+| Postman                          | Cask (GUI)      |          |                                       |
+| Azure-CLI                        | CLI             | Yes      |                                       |
+| Btop                             | TUI             |          | TUI replacement for htop/top          |
+| Fuzzy Finder                     | CLI             |          |                                       |
+| Git                              | CLI             |          |                                       |
+| Go Lang                          | Language        | Yes      |                                       |
+| Json Query Tool (jq)             | CLI             |          |                                       |
+| Json Query Tool (jqp)            | TUI             |          |                                       |
+| K9S                              | CLI             |          |                                       |
+| Kubelogin                        | CLI             |          |                                       |
+| Kustomize                        | CLI             |          |                                       |
+| lolcat                           | CLI             | Yes      | Colorize stdout with random gradients |
+| Neovim                           | TUI             |          |                                       |
+| NVM                              | CLI             |          | Node Version Manager                  |
+| Pipenv                           | CLI             | Yes      |                                       |
+| Postgresql                       | CLI             |          |                                       |
+| ripgrep                          | CLI             |          | Dependency for Telescope (Neovim)     |
+| TLDR                             | CLI             |          | Shorter man                           |
+| TMUX                             | CLI             |          |                                       |
+| trash                            | CLI             |          | Safer-replacement for rm              |
+| Tree-sitter                      | CLI             |          | Dependency for Neovim                 |
+| Hashicorp Vault CLI              | CLI             | Yes      |                                       |
+| NvChad                           | Config          |          | Neovim config                         |
+| OhMyZsh                          | Zsh theme       |          |                                       |
+
 - TODO:
-  - OhMyZsh Installation
   - Installation for some form of Docker daemon (maybe Rancher or Podman)
 
 #### Linux
