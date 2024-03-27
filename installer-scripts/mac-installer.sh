@@ -49,3 +49,72 @@ install $BREW "--cask pgadmin4" "PgAdmin4" true
 # Postman
 install $BREW "--cask postman" "Postman"
 
+
+# Installing CLI and TUI tools
+
+# Azure-CLI
+install $BREW "azure-cli" "Azure-CLI"
+
+# Btop (Resource monitoring TUI)
+install $BREW "btop" "Btop"
+
+# Fuzzy Finder
+install $BREW "fzf" "Fuzzy Finder"
+
+# Git
+install $BREW "git" "Git"
+
+# go
+install $BREW "go" "Go Lang" true
+
+# Json Query Tool 
+install $BREW "jq" "Json Query Tool (jq)"
+
+# Json Query Tool (TUI) 
+install $BREW "jqp" "Json Query Tool (TUI) -> jqp"
+
+# k9s
+install $BREW "k9s" "K9S"
+
+# kubelogin
+install $BREW "Azure/kubelogin/kubelogin" "Kubelogin"
+
+# Kustomize
+install $BREW "kustomize" "Kustomize"
+
+# lolcat
+install $BREW "lolcat" "lolcat (colorize stdout with random gradients)" true
+
+# neovim
+install $BREW "neovim" "Neovim"
+
+# Node Version Manager (nvm)
+install $BREW "nvm" "Node Version Manager (nvm)"
+mkdir ~/.nvm
+echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
+
+# Pipenv
+install $BREW "pipenv" "Pipenv" true
+
+# Postgresql
+install $BREW "postgresql" "Postgresql"
+
+# ripgrep
+install $BREW "ripgrep" "ripgrep"
+
+# tldr
+install $BREW "tldr" "TLDR"
+
+# tmux
+install $BREW "tmux" "TMUX"
+
+# trash
+install $BREW "trash" "trash (safer-replacement for rm)"
+
+# Tree-sitter
+install $BREW "tree-sitter" "Tree-sitter"
+
+# Hashicorp Vault CLI
+$BREW tap hashicorp/tap
+install $BREW "hashicorp/tap/vault" "Hashicorp Vault CLI"
+
