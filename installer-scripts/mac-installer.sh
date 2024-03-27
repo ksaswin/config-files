@@ -143,7 +143,7 @@ install $BREW "tree-sitter" "Tree-sitter"
 
 # Hashicorp Vault CLI
 $BREW tap hashicorp/tap
-install $BREW "hashicorp/tap/vault" "Hashicorp Vault CLI"
+install $BREW "hashicorp/tap/vault" "Hashicorp Vault CLI" true
 
 
 #     __________________________________________________________________________
