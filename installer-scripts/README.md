@@ -18,6 +18,28 @@
   - Obsidian
   - PgAdmin4
   - Postman
+- CLIs & TUIs
+  - Azure-CLI
+  - Btop
+  - Fuzzy Finder
+  - Git
+  - Go Lang
+  - Json Query Tool (jq)
+  - Json Query Tool (TUI) -> jqp
+  - K9S
+  - Kubelogin
+  - Kustomize
+  - lolcat (colorize stdout with random gradients)
+  - Neovim
+  - Node Version Manager (nvm)
+  - Pipenv
+  - Postgresql
+  - ripgrep
+  - TLDR
+  - TMUX
+  - trash (safer-replacement for rm)
+  - Tree-sitter
+  - Hashicorp Vault CLI
 
 #### Linux
 
