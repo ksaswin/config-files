@@ -42,6 +42,7 @@
   - Hashicorp Vault CLI
 - Other
   - NvChad
+  - OhMyZsh
 - TODO:
   - OhMyZsh Installation
   - Installation for some form of Docker daemon (maybe Rancher or Podman)
