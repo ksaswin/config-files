@@ -16,6 +16,8 @@ fi
 
 BREW=$(which brew)
 
+oh_my_zsh $HOME
+
 
 # Installing CASKS
 
