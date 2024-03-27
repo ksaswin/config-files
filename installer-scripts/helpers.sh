@@ -4,6 +4,7 @@
 notify_installation() {
   app=$1
 
+
   echo "Installing $app..."
 }
 
@@ -12,6 +13,7 @@ run_installation () {
   installer=$1
   app_name=$2
   app_display_name=$3
+
 
   notify_installation "$app_display_name"
   $installer search $app_name # FIXME: Only performing search
@@ -50,6 +52,7 @@ install () {
 create_dir () {
   path=$1
 
+
   if [ ! -d "$path" ]; then
     mkdir "$path"
   fi
@@ -64,10 +67,38 @@ clone_repo_to_dir () {
   repo_url=$2
   clone_path=$3
 
+
   if test $(which git); then
     notify_installation "$app"
     git clone "$repo_url" "$clone_path"
   else
     echo "Git installation might have failed.\nCould not install $app"
   fi
+}
+
+
+# Install and setup OhMyZsh
+oh_my_zsh () {
+  home=$1
+
+
+  zshrc_filepath="$home/.zshrc"
+  echo "Backing up the ~/.zshrc file to ~/.zshrc.bk"
+  # cp "$zshrc_filepath" "$zshrc_filepath.bk" # FIXME: Uncomment when ready
+
+  notify_installation "OhMyZsh"
+  # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # FIXME: Uncomment when ready
+
+  zsh_custom="$home/.oh-my-zsh/custom"
+  # clone_repo_to_dir "PowerLevel10k" "https://github.com/romkatv/powerlevel10k.git" "$zsh_custom/themes/powerlevel10k" # FIXME: Uncomment when ready
+  echo "Updating the ZSH_THEME in .zshrc to use powerlevel10k"
+  # sed command with -i and -e flags works on Mac
+  # Intended purpose: Find and replace ZSH_THEME value and write changes to .zshrc
+  # sed -i -e 's/^ZSH_THEME=".*"/ZSH_THEME="powerlevel10k/powerlevel10k"/' "$zshrc_filepath" # FIXME: Uncoment when ready
+
+  # clone_repo_to_dir "Fish-like Auto-Suggestions" "https://github.com/zsh-users/zsh-autosuggestions" "$zsh_custom/plugins/zsh-autosuggestions" # FIXME: Uncomment when ready
+  # sed command with -i and -e flags works on Mac
+  # Intended purpose: Find and replace plugins value and write changes to .zshrc
+  echo "Updating the plugins in .zshrc to use zsh-autosuggestions"
+  # sed -i -e 's/^plugins=\(.*\)/plugins=(zsh-autosuggestions)/' "$zshrc_filepath" # FIXME: Uncomment when ready
 }
