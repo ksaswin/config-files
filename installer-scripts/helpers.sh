@@ -42,3 +42,15 @@ install () {
 
   echo ""
 }
+
+
+# Creates the directory in the provided path if it does not exist
+# Note that the $path is always provided as the relative path
+# without any wildcard characters
+create_dir () {
+  path=$1
+
+  if [ ! -d "$path" ]; then
+    mkdir "$path"
+  fi
+}
