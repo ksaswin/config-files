@@ -84,21 +84,21 @@ oh_my_zsh () {
 
   zshrc_filepath="$home/.zshrc"
   echo "Backing up the ~/.zshrc file to ~/.zshrc.bk"
-  # cp "$zshrc_filepath" "$zshrc_filepath.bk" # FIXME: Uncomment when ready
+  cp "$zshrc_filepath" "$zshrc_filepath.bk"
 
   notify_installation "OhMyZsh"
-  # sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # FIXME: Uncomment when ready
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
   zsh_custom="$home/.oh-my-zsh/custom"
-  # clone_repo_to_dir "PowerLevel10k" "https://github.com/romkatv/powerlevel10k.git" "$zsh_custom/themes/powerlevel10k" # FIXME: Uncomment when ready
+  clone_repo_to_dir "PowerLevel10k" "https://github.com/romkatv/powerlevel10k.git" "$zsh_custom/themes/powerlevel10k"
   echo "Updating the ZSH_THEME in .zshrc to use powerlevel10k"
   # sed command with -i and -e flags works on Mac
   # Intended purpose: Find and replace ZSH_THEME value and write changes to .zshrc
-  # sed -i -e 's/^ZSH_THEME=".*"/ZSH_THEME="powerlevel10k/powerlevel10k"/' "$zshrc_filepath" # FIXME: Uncoment when ready
+  sed -i -e 's/^ZSH_THEME=".*"/ZSH_THEME="powerlevel10k/powerlevel10k"/' "$zshrc_filepath"
 
-  # clone_repo_to_dir "Fish-like Auto-Suggestions" "https://github.com/zsh-users/zsh-autosuggestions" "$zsh_custom/plugins/zsh-autosuggestions" # FIXME: Uncomment when ready
+  clone_repo_to_dir "Fish-like Auto-Suggestions" "https://github.com/zsh-users/zsh-autosuggestions" "$zsh_custom/plugins/zsh-autosuggestions"
   # sed command with -i and -e flags works on Mac
   # Intended purpose: Find and replace plugins value and write changes to .zshrc
   echo "Updating the plugins in .zshrc to use zsh-autosuggestions"
-  # sed -i -e 's/^plugins=\(.*\)/plugins=(zsh-autosuggestions)/' "$zshrc_filepath" # FIXME: Uncomment when ready
+  sed -i -e 's/^plugins=\(.*\)/plugins=(zsh-autosuggestions)/' "$zshrc_filepath"
 }

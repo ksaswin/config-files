@@ -16,7 +16,7 @@ fi
 
 BREW=$(which brew)
 
-oh_my_zsh $HOME
+# oh_my_zsh $HOME # FIXME: Uncomment when ready
 
 
 #     __________________________________________________________________________
