@@ -27,6 +27,7 @@ log "
 
 
 echo "Initializing Development Workspace [×]"
+echo ""
 
 
 if [[ "${machine}" == "Linux" ]]; then
@@ -42,5 +43,6 @@ if test $(which git); then
 fi
 
 
+echo ""
 echo "Development Workspace Ready [✔]"
 
