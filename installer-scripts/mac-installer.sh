@@ -19,7 +19,10 @@ BREW=$(which brew)
 oh_my_zsh $HOME
 
 
-# Installing CASKS
+#     __________________________________________________________________________
+#    /                                                                         /
+#   /                           Installing CASKS                              /
+#  /_________________________________________________________________________/
 
 # DuckDuckGo
 install $BREW "--cask duckduckgo" "DuckDuckGo Browser"
@@ -55,7 +58,10 @@ install $BREW "--cask pgadmin4" "PgAdmin4" true
 install $BREW "--cask postman" "Postman"
 
 
-# Installing CLI and TUI tools
+#     __________________________________________________________________________
+#    /                                                                         /
+#   /                     Installing CLI and TUI tools                        / 
+#  /_________________________________________________________________________/
 
 # Azure-CLI
 install $BREW "azure-cli" "Azure-CLI"
@@ -124,12 +130,15 @@ $BREW tap hashicorp/tap
 install $BREW "hashicorp/tap/vault" "Hashicorp Vault CLI"
 
 
+#     __________________________________________________________________________
+#    /                                                                         /
+#   /                             Other tools                                 /
+#  /_________________________________________________________________________/
+
 # Make sure the ~/.config directory is available
 # This is required to add customisations to tools
 create_dir "$HOME/.config"
 
-
-# Other tools
 
 # NvChad
 create_dir "$HOME/.config/nvim"
