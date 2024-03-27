@@ -40,6 +40,11 @@
   - trash (safer-replacement for rm)
   - Tree-sitter
   - Hashicorp Vault CLI
+- Other
+  - NvChad
+- TODO:
+  - OhMyZsh Installation
+  - Installation for some form of Docker daemon (maybe Rancher or Podman)
 
 #### Linux
 
