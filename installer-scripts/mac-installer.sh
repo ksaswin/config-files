@@ -4,6 +4,9 @@ source ./helpers.sh
 source ./logs.sh
 
 
+# Saving HOME path, since wildcard characters (~) does not resolve in conditions
+HOME=$(echo $HOME)
+
 # Check if Homebrew has already been installed
 # Install if we don't have it
 if test ! $(which brew); then
