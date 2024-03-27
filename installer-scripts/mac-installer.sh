@@ -93,7 +93,7 @@ install $BREW "neovim" "Neovim"
 
 # Node Version Manager (nvm)
 install $BREW "nvm" "Node Version Manager (nvm)"
-mkdir ~/.nvm
+create_dir "$HOME/.nvm"
 echo "export NVM_DIR=~/.nvm\nsource \$(brew --prefix nvm)/nvm.sh" >> .zshrc
 
 # Pipenv
@@ -121,3 +121,20 @@ install $BREW "tree-sitter" "Tree-sitter"
 $BREW tap hashicorp/tap
 install $BREW "hashicorp/tap/vault" "Hashicorp Vault CLI"
 
+
+# Make sure the ~/.config directory is available
+# This is required to add customisations to tools
+create_dir "$HOME/.config"
+
+
+# Other tools
+
+# NvChad
+create_dir "$HOME/.config/nvim"
+notify_installation "NvChad"
+git clone https://github.com/NvChad/starter ~/.config/nvim
+
+
+# TODO:
+# - OhMyZsh Installation
+# - Installation for some form of Docker daemon
