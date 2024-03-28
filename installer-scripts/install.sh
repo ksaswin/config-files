@@ -22,6 +22,14 @@ log "
 "
 
 
+read -p "Proceed with installation? (y/n) " -n 1;
+echo "";
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+  echo "\nTerminating process"
+  exit 1
+fi
+
+
 # Ask for administrator password upfront
 # sudo -v  # FIXME: Disabled sudo privilege request
 
@@ -46,3 +54,4 @@ fi
 echo ""
 echo "Development Workspace Ready [✔]"
 
+exit 0
