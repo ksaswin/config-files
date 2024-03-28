@@ -119,12 +119,6 @@ function take {
 alias jqp="jqp --config ~/.config/jqp/config.yaml"
 
 
-# Upgrading to the exa command
-# alias ls='exa --icons --color=always'
-# alias ll='exa -l --icons --color=always'
-# alias la='exa -la --icons --color=always'
-
-
 # My most used commands for fuzzy finder
 # fzf to checkout to a new branch in a git repository
 alias gct='git checkout $(git branch | fzf)'
