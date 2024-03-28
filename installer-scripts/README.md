@@ -18,6 +18,7 @@
 | Obsidian                         | Cask (GUI)      |          | Note-taking App                       |
 | PgAdmin4                         | Cask (GUI)      | Yes      |                                       |
 | Postman                          | Cask (GUI)      |          |                                       |
+| Visual Studio Code               | Cask (GUI)      |          |                                       |
 | Azure-CLI                        | CLI             | Yes      |                                       |
 | Btop                             | TUI             |          | TUI replacement for htop/top          |
 | Fuzzy Finder                     | CLI             |          |                                       |

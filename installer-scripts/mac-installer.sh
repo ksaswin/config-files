@@ -65,6 +65,9 @@ install $BREW "--cask pgadmin4" "PgAdmin4" true
 # Postman
 install $BREW "--cask postman" "Postman"
 
+# Visual Studio Code
+install $BREW "--cask visual-studio-code" "Visual Studio Code"
+
 
 #     __________________________________________________________________________
 #    /                                                                         /
