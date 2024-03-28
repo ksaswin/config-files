@@ -48,6 +48,25 @@ fi
 if test $(which git); then
   log "Downloading dot-files to ~/dotfiles"
   # git clone https://github.com/ksaswin/config-files.git ~/dotfiles  # FIXME: Disabled dotfiles installation
+
+  if [ -d ~/.config/tmux ]; then
+    echo "Existing tmux configuration found. Backing up config and replacing."
+    mv ~/.config/tmux ~/.config/tmux.bk
+  fi
+  cp -r ~/dotfiles/tmux ~/.config
+
+  if [ -d ~/.config/nvim/lua/custom ]; then
+    echo "Existing nvim configuration found. Backing up config and replacing."
+    mv ~/.config/nvim/lua/custom ~/.config/nvim/lua/custom.bk
+  fi
+  cp -r ~/dotfiles/nvim/custom ~/.config/nvim/lua/custom
+
+  if [ -d ~/.config/jqp ]; then
+    echo "Existing jqp configuration found. Backing up config and replacing."
+    mv ~/.config/jqp ~/.config/jqp.bk
+  fi
+  cp -r ~/dotfiles/jqp ~/.config/
+
 fi
 
 
