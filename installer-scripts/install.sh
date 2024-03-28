@@ -67,6 +67,9 @@ if test $(which git); then
   fi
   cp -r ~/dotfiles/jqp ~/.config/
 
+else
+  echo "git not found. Cannot download custom configs."
+
 fi
 
 
