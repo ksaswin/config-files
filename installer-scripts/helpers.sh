@@ -116,34 +116,4 @@ oh_my_zsh () {
   elif [[ "${machine}" == "Linux" ]]; then
     sed -i 's/^plugins=\(.*\)/plugins=(zsh-autosuggestions)/' "$zshrc_filepath"
   fi
-
-  echo "Creating aliases"
-  touch "$zsh_custom/aliases.zsh"
-  echo "# MY CUSTOM ALIASES
-
-# Usually, while creating a new directory,
-# you will also need to move into that directory
-# after creating it.
-function take {
-  mkdir -p $1
-  cd $1
-}
-
-
-# JQP config
-alias jqp="jqp --config ~/.config/jqp/config.yaml"
-
-
-# My most used commands for fuzzy finder
-# fzf to checkout to a new branch in a git repository
-alias gct='git checkout $(git branch | fzf)'
-# Find a directory within Development directory using `fzf`
-alias cd-dev='cd $(find Development -type d | fzf)'
-# Open a file using Nvim within the current directory using `fzf`
-alias edit='nvim $(find . -not \( -path ./.venv -prune \) -not \( -path ./venv -prune \) -not \( -path ./.git -prune \) -not \( -path ./node_modules -prune \) -type file | fzf)'
-
-
-# Using rsync for prettier & verbose copying experience
-alias cpv='rsync -avh --progress'
-" > $zsh_custom/aliases.zsh
 }
