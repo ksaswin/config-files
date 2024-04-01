@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ./logs.sh
+
 
 notify_installation() {
   app=$1
@@ -90,8 +92,8 @@ oh_my_zsh () {
   esac
 
   zshrc_filepath="$home/.zshrc"
-  echo "Backing up the ~/.zshrc file to ~/.zshrc.bk"
-  cp "$zshrc_filepath" "$zshrc_filepath.bk"
+  log "Backing up the ~/.zshrc file to ~/.zshrc.auto-bk"
+  cp "$zshrc_filepath" "$zshrc_filepath.auto-bk"
 
   notify_installation "OhMyZsh"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
