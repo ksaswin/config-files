@@ -48,8 +48,25 @@
 
 #### Linux
 
-- Git
-- Something...
+| Package                          | App Type        | Optional | Description                           |
+|----------------------------------|-----------------|----------|---------------------------------------|
+| Btop                             | TUI             |          | TUI replacement for htop/top          |
+| Fuzzy Finder                     | CLI             |          |                                       |
+| Git                              | CLI             |          |                                       |
+| Json Query Tool (jq)             | CLI             |          |                                       |
+| lolcat                           | CLI             | Yes      | Colorize stdout with random gradients |
+| Neovim                           | TUI             |          |                                       |
+| ripgrep                          | CLI             |          | Dependency for Telescope (Neovim)     |
+| TLDR                             | CLI             |          | Shorter man                           |
+| TMUX                             | CLI             |          |                                       |
+| NvChad                           | Config          |          | Neovim config                         |
+
+- TODO:
+  - Automate jqp installation from Github releases.
+  - k9s installation on ubuntu.
+  - Update Neovim installation to use Github releases.
+  - Unable to install nvm using apt.
+
 
 #### Dotfiles
 
