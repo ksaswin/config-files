@@ -18,15 +18,6 @@ BREW=$(which brew)
 
 # oh_my_zsh $HOME # FIXME: Uncomment when ready
 
-echo "
-export NVM_DIR="$HOME/.nvm"
-
-# To load nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-# To load nvm bash completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-" >> ./textfile.zsh
-
 #     __________________________________________________________________________
 #    /                                                                         /
 #   /                           Installing CASKS                              /
