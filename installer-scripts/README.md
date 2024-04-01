@@ -62,5 +62,5 @@ The installer `install.sh` script finds the OS being used and runs the installer
 
 Run the installer script:
 ```shell
-sh -c "$(curl https://raw.githubusercontent.com/ksaswin/config-files/installers/installer-scripts/curl.sh)" && sh ./install.sh
+sh -c "$(curl https://raw.githubusercontent.com/ksaswin/config-files/installers/installer-scripts/curl.sh)" && /usr/bin/env bash ./install.sh
 ```
