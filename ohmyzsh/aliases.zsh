@@ -165,13 +165,28 @@ alias jqp="jqp --config ~/.config/jqp/config.yaml"
 # alias la='exa -la --icons --color=always'
 
 
-# My most used commands for fuzzy finder
-# fzf to checkout to a new branch in a git repository
-alias gct='git checkout $(git branch | fzf)'
-# Find a directory within Development directory using `fzf`
-alias cd-dev='cd $(find Development -type d | fzf)'
-# Open a file using Nvim within the current directory using `fzf`
-alias edit='nvim $(find . -not \( -path ./.venv -prune \) -not \( -path ./venv -prune \) -not \( -path ./.git -prune \) -not \( -path ./node_modules -prune \) -type file | fzf)'
+# Setup fzf keybindings and fuzzy completion
+eval "$(fzf --zsh)"
+
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+# Use fd for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  fd --hidden --exclude .git . "$1"
+}
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type=d --hidden --exclude .git . "$1"
+}
+
+source ~/fzf-git.sh/fzf-git.sh
+
+# Bat
+export BAT_THEME=tokyonight_moon
 
 
 # Using rsync for prettier & verbose copying experience
