@@ -71,11 +71,20 @@ install $BREW "azure-cli" "Azure-CLI" true
 # Btop (Resource monitoring TUI)
 install $BREW "btop" "Btop"
 
+# bat (Better version of cat)
+install $BREW "bat" "bat (better version of cat)"
+
 # Fuzzy Finder
 install $BREW "fzf" "Fuzzy Finder"
 
+# fd (Replacement for find)
+install $BREW "fd" "Replacement for find"
+
 # Git
 install $BREW "git" "Git"
+
+# Git-delta (Better diffs)
+install $BREW "git-delta" "Git-delta (Better diffs)" true
 
 # go
 install $BREW "go" "Go Lang" true
@@ -154,3 +163,23 @@ create_dir "$HOME/.config"
 create_dir "$HOME/.config/nvim"
 # clone_repo_to_dir "NvChad" "https://github.com/NvChad/starter" "$HOME/.config/nvim" # FIXME: Uncomment when ready
 
+# fzf-git
+# clone_repo_to_dir "fzf-git" "https://github.com/junegunn/fzf-git.sh.git" "$HOME" # FIXME: Uncomment when ready
+
+# Bat customisations
+bat_config_dir="$HOME/.config/bat"
+create_dir "$bat_config_dir"
+create_dir "$bat_config_dir/themes"
+curl https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_night.tmTheme --output "$bat_config_dir/themes/tokyonight_night.tmTheme"
+curl https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_day.tmTheme --output "$bat_config_dir/themes/tokyonight_day.tmTheme"
+curl https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_moon.tmTheme --output "$bat_config_dir/themes/tokyonight_moon.tmTheme"
+curl https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/sublime/tokyonight_storm.tmTheme --output "$bat_config_dir/themes/tokyonight_storm.tmTheme"
+bat cache --build
+
+# NOTE: I'm not really using git-delta (didn't really like it)
+# Git configs
+# git config --global core.pager "delta"
+# git config --global interactive.diffFilter "delta --color-only"
+# git config --global delta.navigate "true"
+# git config --global merge.conflictstyle "diff3"
+# git config --global diff.colorMoved "default"
