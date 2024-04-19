@@ -38,7 +38,7 @@
 | Pipenv                           | CLI             | Yes      |                                       |
 | Postgresql                       | CLI             |          |                                       |
 | ripgrep                          | CLI             |          | Dependency for Telescope (Neovim)     |
-| TLDR                             | CLI             |          | Shorter man                           |
+| TLRC                             | CLI             |          | Rust-Client for TLDR                  |
 | TMUX                             | CLI             |          |                                       |
 | trash                            | CLI             |          | Safer-replacement for rm              |
 | Tree-sitter                      | CLI             |          | Dependency for Neovim                 |

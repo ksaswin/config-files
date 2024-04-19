@@ -74,6 +74,9 @@ install $BREW "btop" "Btop"
 # bat (Better version of cat)
 install $BREW "bat" "bat (better version of cat)"
 
+# eza (Better ls)
+install $BREW "eza" "Eza (Better ls)"
+
 # Fuzzy Finder
 install $BREW "fzf" "Fuzzy Finder"
 
@@ -132,8 +135,8 @@ install $BREW "postgresql" "Postgresql"
 # ripgrep
 install $BREW "ripgrep" "ripgrep"
 
-# tldr
-install $BREW "tldr" "TLDR"
+# tlrc
+install $BREW "tlrc" "TLRC (Rust-client for TLDR)"
 
 # tmux
 install $BREW "tmux" "TMUX"
