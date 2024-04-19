@@ -21,8 +21,11 @@
 | Visual Studio Code               | Cask (GUI)      |          |                                       |
 | Azure-CLI                        | CLI             | Yes      |                                       |
 | Btop                             | TUI             |          | TUI replacement for htop/top          |
+| Bat                              | CLI             |          | Better version of cat                 |
 | Fuzzy Finder                     | CLI             |          |                                       |
+| fd                               | CLI             |          | Replacement for find                  |
 | Git                              | CLI             |          |                                       |
+| Git-delta                        | CLI             | Yes      | Better Git diffs                      |
 | Go Lang                          | Language        | Yes      |                                       |
 | Json Query Tool (jq)             | CLI             |          |                                       |
 | Json Query Tool (jqp)            | TUI             |          |                                       |
