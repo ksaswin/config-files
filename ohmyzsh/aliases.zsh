@@ -221,8 +221,11 @@ alias kl="kubectl -n $NAMESPACE logs"
 # GET COMMANDS
 alias kg="kubectl -n $NAMESPACE get"
 alias kgns="kubectl -n $NAMESPACE get namespaces"
-alias kgp="kubectl -n $NAMESPACE get pods"
+alias kga="kubectl -n $NAMESPACE get all"
 alias kgd="kubectl -n $NAMESPACE get deployments"
+alias kgp="kubectl -n $NAMESPACE get pods"
+alias kgs="kubectl -n $NAMESPACE get services"
+alias kgrs="kubectl -n $NAMESPACE get rs" # Replica Set
 # CONFIG COMMANDS
 alias kcgc='kubectl config get-contexts'
 alias kcuc='kubectl config use-context'
