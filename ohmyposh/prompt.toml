@@ -2,6 +2,7 @@
 
 version = 2
 final_space = true
+console_title_tempalate = '{{ .UserName }}@{{ .Shell }} in {{ .Folder }}'
 
 [[blocks]]
   type = 'prompt'
@@ -13,12 +14,6 @@ final_space = true
     style = 'plain'
     foreground = 'p:os'
     template = '{{ .Icon }} '
-
-  # [[blocks.segments]]
-  #   type = 'session'
-  #   style = 'plain'
-  #   foreground = 'p:blue'
-  #   template = '{{ .UserName }}@{{ .OS }} '
 
   [[blocks.segments]]
     type = 'path'
@@ -65,12 +60,6 @@ final_space = true
 
     [blocks.segments.properties]
       time_format = 'Jan 2 15:04:05'
-
-  # [[blocks.segments]]
-  #   type = 'text'
-  #   style = 'plain'
-  #   foreground = 'p:closer'
-  #   template = ''
 
 [[blocks]]
   type = 'rprompt'
