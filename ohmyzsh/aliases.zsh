@@ -204,9 +204,6 @@ _fzf_comprun() {
 
 source ~/fzf-git.sh/fzf-git.sh
 
-# Bat
-export BAT_THEME=tokyonight_moon
-
 
 # Using rsync for prettier & verbose copying experience
 alias cpv='rsync -avh --progress'
