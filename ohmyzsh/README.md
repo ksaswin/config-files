@@ -60,4 +60,4 @@ export NVM_DIR="$HOME/.nvm"
 #### Aliases
 The `aliases.zsh` could be moved to `$ZSH_CUSTOM/custom/` path.
 
-The `tmux_aliases.zsh` contains some alises for TMUX. It expects `gum` to be installed in your system.
+Both `k8s_aliases.zsh` & `tmux_aliases.zsh` expects `gum` to be installed in your system.
