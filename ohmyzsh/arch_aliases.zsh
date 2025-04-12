@@ -1,6 +1,6 @@
 # Pacman aliases
 alias yoink="paru -S"
-alias yeet="paru -Rcns"
+alias yeet="paru -R"
 
 # NVM usage
 export NVM_DIR="/usr/share/nvm"
