@@ -6,6 +6,8 @@ local map = vim.keymap.set
 -- In NORMAL mode, map the `;` to run `:`
 map("n", ";", ":", { desc = "CMD enter command mode" })
 
+map("n", "<leader>lf", "<cmd> lua vim.diagnostic.open_float(nil, {focus=false}) <CR>", { desc = "Floating Diagnostic" })
+
 map("i", "jk", "<ESC>")
 
 
