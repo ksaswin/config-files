@@ -32,6 +32,16 @@ return {
       require("configs.noice")
     end
   },
+    -- for noice transparency
+  {
+    "rcarriga/nvim-notify",
+    event = "VeryLazy",
+    config = function()
+      require("notify").setup({
+        background_colour = "#000000",
+      })
+    end
+  },
 
   -- Highlight todo comments
   -- TODO: This is a todo comment
