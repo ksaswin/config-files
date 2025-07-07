@@ -53,7 +53,7 @@ lspconfig.marksman.setup {
 lspconfig.volar.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  cmd = { "vue-language-server" },
+  cmd = { "vue-language-server", "stdio" },
   filetypes = { "vue" },
   settings = {
     vetur = {
