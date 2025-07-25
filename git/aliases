@@ -5,5 +5,6 @@
 	unstage = restore --staged
 	diffmod = "!f() { git diff $(git diff --name-only | fzf --tmux --height=40% --layout=reverse --info=inline --border --margin=1 --padding=1); }; f"
 	diffstaged = "!f() { git diff --staged $(git diff --staged --name-only | fzf --tmux --height=40% --layout=reverse --info=inline --border --margin=1 --padding=1); }; f"
+  fadd = "!f() { git add $(git ls-files --modified --others --exclude-standard | fzf -m --tmux --height=40% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff -- {} | bat --color=always --plain') && git status; }; f"
 [init]
 	defaultBranch = main
