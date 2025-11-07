@@ -5,6 +5,17 @@ vim.lsp.enable(servers)
 
 -- read :h vim.lsp.config for changing options of lsp servers 
 
+-- Fix for signature help to not focus the floating window
+vim.lsp.handlers["textDocument/signatureHelp"] = function(err, result, ctx, config)
+  config = vim.tbl_extend("force", config or {}, {
+    focus = false,
+    silent = true,
+  })
+
+  -- Use the new handler directly
+  return vim.lsp.handlers.signature_help_default(err, result, ctx, config)
+end
+
 vim.lsp.config("ts_ls", {
   filetypes = { "typescript", "javascript", "typescriptreact", "javascriptreact", "vue" },
 })
