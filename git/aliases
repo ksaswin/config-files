@@ -3,9 +3,9 @@
 [alias]
 	staash = stash --all
 	unstage = restore --staged
-  diffmod = "!f() { git ls-files --modified --others --exclude-standard | fzf --tmux=center,100%,40% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff -- {} | bat --color=always --plain'; }; f"
-  diffstaged = "!f() { git diff --staged --name-only | fzf --tmux=center,100%,40% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff --staged {} | bat --color=always --plain'; }; f"
-  fadd = "!f() { git add $(git ls-files --modified --others --exclude-standard | fzf -m --tmux=center,100%,40% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff -- {} | bat --color=always --plain') && git status; }; f"
+  diffmod = "!f() { git ls-files --modified --others --exclude-standard | fzf --tmux=center,90%,70% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff -- {} | bat --color=always --plain'; }; f"
+  diffstaged = "!f() { git diff --staged --name-only | fzf --tmux=center,90%,70% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff --staged {} | bat --color=always --plain'; }; f"
+  fadd = "!f() { git add $(git ls-files --modified --others --exclude-standard | fzf -m --tmux=center,90%,70% --layout=reverse --info=inline --border --margin=1 --padding=1 --preview 'git diff -- {} | bat --color=always --plain') && git status; }; f"
   sync-main = "!f() { git pull origin $(git symbolic-ref refs/remotes/origin/HEAD | awk -F '/' '{ print $NF }'); }; f"
   sm = sync-main
 [init]
