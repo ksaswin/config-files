@@ -1,0 +1,132 @@
+@import "colors/mocha.css";
+
+* {
+  border: none;
+  border-radius: 0;
+
+  font-family: "Fira Code";
+  font-size: 16px;
+  font-weight: bold;
+
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: @text;
+  margin: 4px;
+}
+
+tooltip {
+  background-color: @base;
+  border: 1px solid @crust;
+  border-radius: 12px;
+}
+
+tooltip label {
+  color: @text;
+  padding: 8px;
+}
+
+
+
+#workspaces {
+  border-radius: 1rem;
+  margin: 5px;
+  background-color: @surface0;
+  margin-left: 1rem;
+}
+
+#workspaces button {
+  color: @lavender;
+  border-radius: 1rem;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @sky;
+  border-radius: 1rem;
+}
+
+#workspaces button:hover {
+  color: @sapphire;
+  border-radius: 1rem;
+}
+
+#workspaces button.urgent {
+  background-color: @red;
+  color: @surface0;
+}
+
+#clock,
+#tray,
+#backlight,
+#wireplumber,
+#network,
+#battery,
+#custom-lock,
+#custom-power,
+#custom-notification {
+  background-color: @surface0;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+  border-radius: 50px;
+}
+
+#wireplumber,
+#network,
+#battery,
+#custom-lock,
+#custom-power,
+#custom-notification {
+  margin-left: 1rem;
+}
+
+#clock {
+  color: @blue;
+  margin-right: 1rem;
+}
+
+#tray {
+  margin-right: 1rem;
+  border-radius: 1rem;
+}
+
+#backlight {
+  color: @yellow;
+}
+
+#wireplumber {
+  color: @maroon;
+}
+
+#network {
+  color: @mauve;
+}
+
+#battery {
+  color: @green;
+}
+
+#battery.charging {
+  color: @green;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+#custom-lock {
+  color: @peach;
+}
+
+#custom-power {
+  color: @red;
+}
+
+#custom-notification {
+  margin-right: 12px;
+  color: @flamingo;
+}
