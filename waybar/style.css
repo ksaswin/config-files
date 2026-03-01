@@ -62,6 +62,8 @@ tooltip label {
 
 #clock,
 #tray,
+#cpu,
+#memory,
 #backlight,
 #wireplumber,
 #network,
@@ -75,6 +77,8 @@ tooltip label {
   border-radius: 50px;
 }
 
+#memory,
+#backlight,
 #wireplumber,
 #network,
 #battery,
@@ -92,6 +96,11 @@ tooltip label {
 #tray {
   margin-right: 1rem;
   border-radius: 1rem;
+}
+
+#cpu,
+#memory {
+  color: @teal;
 }
 
 #backlight {
