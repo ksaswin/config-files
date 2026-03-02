@@ -67,6 +67,7 @@ tooltip label {
 #backlight,
 #wireplumber,
 #network,
+#bluetooth,
 #battery,
 #custom-lock,
 #custom-power,
@@ -81,6 +82,7 @@ tooltip label {
 #backlight,
 #wireplumber,
 #network,
+#bluetooth,
 #battery,
 #custom-lock,
 #custom-power,
@@ -112,6 +114,10 @@ tooltip label {
 }
 
 #network {
+  color: @mauve;
+}
+
+#bluetooth {
   color: @mauve;
 }
 

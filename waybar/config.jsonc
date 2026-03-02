@@ -13,6 +13,7 @@
     "backlight",
     "wireplumber",
     "network",
+    "bluetooth",
     "battery",
     "custom/lock",
     "custom/power",
@@ -78,7 +79,6 @@
   "network": {
     "interface": "wlan0",
     "format": "{ifname}",
-    // "format-wifi": "{essid} ",
     "format-wifi": "",
     "format-ethernet": "{ipaddr}/{cidr} 󰊗",
     "format-disconnected": "", //An empty format will hide the module.
@@ -87,6 +87,17 @@
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
+  },
+
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+    "on-click": "/usr/sbin/blueman-manager"
   },
 
   "battery": {
@@ -106,14 +117,14 @@
 
   "custom/lock": {
     "tooltip": false,
-    "on-click": "hyprlock",
+    "on-click": "/usr/sbin/hyprlock >> /tmp/powermenu.log 2>&1",
     "format": ""
   },
 
   "custom/power": {
     "tooltip": false,
-    "on-click": "wlogout &", // FIXME: update this
-    "format": ""
+    "format": "",
+    "on-click": "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
   },
 
   "custom/notification": {
