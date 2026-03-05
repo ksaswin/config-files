@@ -117,8 +117,21 @@ tooltip label {
   color: @mauve;
 }
 
+#network.disconnected {
+  color: @red;
+}
+
 #bluetooth {
   color: @mauve;
+}
+
+#bluetooth.off,
+#bluetooth.disabled {
+  color: @red;
+}
+
+#bluetooth:not(.connected) {
+  color: @maroon;
 }
 
 #battery {
