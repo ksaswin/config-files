@@ -1,23 +1,5 @@
 # MY CUSTOM ALIASES
 
-# NOTE:
-# Make sure the arch_aliases file runs before this one
-
-
-# NOTE: Update this path
-gitPath="$HOME/"
-
-
-# For work purposes, my git PATs are stored in
-# the $gitPath 
-# in the following format:
-# personal<sep>the_PAT_is_pasted_here<sep>
-# work<sep>the_PAT_is_pasted_here<sep>
-function getmypat {
-  awk -F "<sep>" '/^personal/ { print $2 }' "$gitPath"  | pbcopy
-}
-
-
 # Usually, while creating a new directory,
 # you will also need to move into that directory
 # after creating it.
@@ -44,7 +26,7 @@ function chrmt {
 
   user_name='ksaswin'
 
-  pat=$(getmypat && pbpaste | xargs)
+  pat=$(shhh get gh-dev-pat)
 
   new_url="https://$user_name:$pat@github.com$repo_addr"
   
@@ -84,7 +66,7 @@ function gc {
 
   user_name='ksaswin'
 
-  pat=$(getmypat && pbpaste | xargs)
+  pat=$(shhh get gh-dev-pat)
 
   clone_url="https://$user_name:$pat@github.com$repo_addr"
 
