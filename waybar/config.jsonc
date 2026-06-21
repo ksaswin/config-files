@@ -5,6 +5,7 @@
   ],
   "modules-center": [
     "clock",
+    "mpris",
     "tray"
   ],
   "modules-right": [
@@ -37,6 +38,18 @@
     "format": "  {:%H:%M}",
     "format-alt": " {:%d/%m/%Y}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title}",
+    "player-icons": {
+      "spotify": "",
+      "firefox": "",
+      "chromium": "",
+      "vlc": "󰕼"
+    },
+    "format-paused": " {title}",
+    "max-length": 40
   },
 
   "tray": {

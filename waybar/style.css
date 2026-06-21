@@ -61,6 +61,7 @@ tooltip label {
 }
 
 #clock,
+#mpris,
 #tray,
 #cpu,
 #memory,
@@ -92,6 +93,11 @@ tooltip label {
 
 #clock {
   color: @blue;
+  margin-right: 1rem;
+}
+
+#mpris {
+  color: @green;
   margin-right: 1rem;
 }
 
